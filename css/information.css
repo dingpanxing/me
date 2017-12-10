@@ -26,8 +26,9 @@ dl,dd,dt{
     display: inline-block;
     width: 76px;
     line-height: 40px;
-
-}
+    text-align: center;
+    border-radius: 5px;
+    }
 .place_se dd,.city_se dd{
     padding-left: 120px;
 }
@@ -73,10 +74,6 @@ dl,dd,dt{
 .citysearch span>a{
     color: #333333;
 }
-.citysearch span>a:hover{
-    color: #F66626;
-
-}
 .new_line{
     width: 100%;
     height: 45px;
@@ -98,7 +95,7 @@ dl,dd,dt{
     line-height: 40px;
 }
 .news_pro ul li a{
-    margin-left: 20px;
+    margin-left: 5px;
 }
 .news_pro ul li b{
     margin-right: 30px;
@@ -107,3 +104,16 @@ dl,dd,dt{
 .city_se dd .special_long{
     width: 130px;
 }
+.icol{
+    margin-left: 12px;
+    width: 8px;
+    height: 7px;
+    line-height: 35px;
+}
+.active_tes{
+    background-color: #F66626;
+}
+.active_tes a{
+    color: #ffffff;
+}
+

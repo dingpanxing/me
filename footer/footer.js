@@ -1,7 +1,6 @@
-var footerpage = " <div class=\"footer clear\">\n" +
+var footerpage=" <div class=\"footer clear\">\n" +
     "        <div class=\"footer-top clear\">\n" +
     "            <div class=\"left telphone\">\n" +
-    "<p><img height=\"60px\" src=\"../image/logo.jpg\"/></p>" +
     "                <ul>\n" +
     "                    <li>\n" +
     "                        <span>销售热线：</span>\n" +

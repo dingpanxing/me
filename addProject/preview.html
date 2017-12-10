@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="test1.css">
     <script src="../corejs/jquery-3.2.1.js"></script>
     <script src="../corejs/city.min.js"></script>
     <script src="../header/header.js"></script>
@@ -14,19 +15,22 @@
     <script src="preview.js"></script>
 </head>
 <body>
-    <div class="title_page"></div>
-    <div class="details_contact pre_content">
-        <div class="details_contact_box" id="prew1">
+<div class="title_page"></div>
+<div class="details_contact pre_content">
+    <div class="prew1_title"><h2 class="title-tips">您正在发布造价/预算项目</h2></div>
+    <div class="details_contact_box" id="prew1">
+
+        <div>
             <div class="pro_type">
                 <form action="" method="get">
                     <div>项目分类：</div>
-                    <label><input name="project" type="radio" value="1" />工程造价</label>
-                    <label><input name="project" type="radio" value="2" />招投标 </label>
-                    <label><input name="project" type="radio" value="3" />施工组织设计</label>
-                    <label><input name="project" type="radio" value="4" />工程资料</label>
-                    <label><input name="project" type="radio" value="5" />图纸设计</label>
-                    <label><input name="project" type="radio" value="6" />咨询指导</label>
-                    <label><input name="project" type="radio" value="7" />其他</label>
+                    <label class="actived"><i>•</i><input name="project" type="radio" value="1" />工程造价</label>
+                    <label><i>•</i><input name="project" type="radio" value="2" />招投标 </label>
+                    <label><i>•</i><input name="project" type="radio" value="3" />施工组织设计</label>
+                    <label><i>•</i><input name="project" type="radio" value="4" />工程资料</label>
+                    <label><i>•</i><input name="project" type="radio" value="5" />图纸设计</label>
+                    <label><i>•</i><input name="project" type="radio" value="6" />咨询指导</label>
+                    <label><i>•</i><input name="project" type="radio" value="7" />其他</label>
                 </form>
             </div>
             <div class="pro_need">
@@ -61,33 +65,42 @@
                 </form>
             </div>
             <div class="pro_introdce">
-                <div class="info_details">
-                    <div>
-                        <span class="pro_title">项目概况：</span>
-                        <ul class="form_table">
-                            <li class="form_addr">
-                                <span class="form_title">项目地址：</span>
-                                <select id="prov">
-                                </select>
-                                <select id="city">
-                                </select>
-                            </li>
-                            <li>
-                                <span class="form_title">交付日期：</span>
-                                <select>
-                                    <option>北京</option>
-                                </select>
-                            </li>
-                            <li>
-                                <span class="form_title">建筑规模：</span>
-                                <input>
-                            </li>
-                            <li class="lastch">
-                                <span class="form_title">图纸资料：</span>
-                                <input>
-                            </li>
-                        </ul>
+                <div class="" style="margin-bottom: 10px">
+                    <span>项目所在地：</span>
+                    <div class="publish-form">
+                        <div id="regionlist_container_0">
+                        <span class="ui-select city">
+                            <input type="text"  id="RegionClassListregion_id_0_city" value="请选择">
+                            <select id="prov">
+                            </select>
+                        </span>
+                            <span class="ui-select city">
+                            <input type="text" id="RegionClassListregion_id_0_pe" value="请选择">
+                           <select id="city">
+                           </select>
+                        </span>
+                        </div>
                     </div>
+                    <span>交付日期:</span>
+                    <div class="publish-form">
+                        <div>
+                            <input type="text" class="ui-input" value="请选择">
+                        </div>
+                    </div>
+                    <span>建筑规模:</span>
+                    <div class="publish-form">
+                        <input class="ui-input Validform_error" datatype="jzgm" nullmsg="<span class='error-tips'> 请输入建筑规模</span>" errormsg="<span class='error-tips'> 请输入建筑规模</span>" min="0" type="number" name="project[area]" id="project_area">
+                        <span class="ui-select ui-select-short">
+                      <input id="scale_unit_show" type="text" value="平方米">
+                      <select size="1" name="project[scale_unit]" id="project_scale_unit">
+                          <option value="0">平方米</option>
+                          <option value="1">公里</option>
+                          <option value="2">万元</option>
+                      </select>
+                    </span>
+                    </div>
+                    <span>图纸资料: &nbsp;</span>
+                    <input type="file" id="file_paper_id_0" class="upload-files-array" value="">
                 </div>
                 <div>
                     <div>
@@ -112,136 +125,186 @@
                         </div>
                         <textarea class="input_box"></textarea>
                     </div>
-                    <div class="input_info">
-                        <div class="pro_price">项目费用：</div>
-                        <ul>
-                            <li>
-                                <span>费用测算：</span><input>
-                            </li>
-                            <li>
-                                <span>联系人：</span><input>
-                            </li>
-                            <li>
-                                <span>联系电话：</span><input>
-                            </li>
-                            <li class="lastch">
-                                <span>联系邮箱</span><input>
-                            </li>
-                        </ul>
+                    <div>
+                        <div class="publish-form">
+                            <div style="margin-bottom: 10px">
+                                <label>费用测算：<input type="text" class="ui-input" value=""></label>
+                            </div>
+                            <div style="margin-bottom: 10px">
+                                <label> 联系人&nbsp;&nbsp;&nbsp;：<input type="text" class="ui-input" value=""></label>
+                            </div>
+                            <div style="margin-bottom: 10px">
+                                <label>联系电话：<input type="text" class="ui-input" value=""></label>
+                            </div>
+                            <div>
+                                <label>联系邮箱：<input type="text" class="ui-input" value=""></label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="updateBtn">
-               <div>确认</div>
             </div>
         </div>
-        <div class="details_contact_box hidden" id="prew2">
-            <div class="pro_type">
-                <form action="" method="get">
-                    <div>项目分类：</div>
-                    <label><input name="project" type="radio" value="1" />工程造价</label>
-                    <label><input name="project" type="radio" value="2" disabled/>招投标 </label>
-                    <label><input name="project" type="radio" value="3" disabled/>施工组织设计</label>
-                    <label><input name="project" type="radio" value="4" disabled/>工程资料</label>
-                    <label><input name="project" type="radio" value="5" disabled/>图纸设计</label>
-                    <label><input name="project" type="radio" value="6" disabled/>咨询指导</label>
-                    <label><input name="project" type="radio" value="7" disabled/>其他</label>
-                </form>
-            </div>
-            <div class="pro_need">
-                <form action="" method="get">
-                    <div>需求分类：</div>
-                    <label><input name="needtype" type="checkbox" value=""  disabled/>工程量计算</label>
-                    <label><input name="needtype" type="checkbox" value="" disabled/>编制概预算 </label>
-                    <label><input name="needtype" type="checkbox" value="" disabled/>编制清单</label>
-                    <label><input name="needtype" type="checkbox" value="" disabled/>投标报价</label>
-                    <label><input name="needtype" type="checkbox" value="" disabled/>其他</label>
-                </form>
-            </div>
-            <div class="profress">
-                <form action="" method="get">
-                    <div>专业分类：</div>
-                    <label><input name="project" type="checkbox" value="" disabled/>土建</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>钢结构 </label>
-                    <label><input name="project" type="checkbox" value="" disabled/>装饰装修</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>水电暖安装</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>机电安装</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>设备安装</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>工业管道</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>消防工程</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>道路桥梁</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>市政绿化</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>电力土建</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>电力安装</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>水利水电</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>通信广电</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>矿业工程</label>
-                    <label><input name="project" type="checkbox" value="" disabled/>其他</label>
-                </form>
-            </div>
-            <div class="pro_introdce">
-                <div class="info_details">
-                    <div>
-                        <span class="pro_title">项目概况：</span>
-                        <ul class="form_table">
-                            <li class="form_addr">
-                                <span class="form_title">项目地址：</span>
-                                <span></span>
-                            </li>
-                            <li>
-                                <span class="form_title">交付日期：</span>
-                                <span></span>
-                            </li>
-                            <li>
-                                <span class="form_title">建筑规模：</span>
-                                <span></span>
-                            </li>
-                            <li class="lastch">
-                                <span class="form_title">图纸资料：</span>
-                                <span></span>
-                            </li>
-                        </ul>
+        <input class="next-btn ui-button ui-widget ui-state-default ui-corner-all" id="second_step" type="button" value="发布预览" role="button">
+    </div>
+    <div class="details_contact_box hidden" id="prew2">
+        <div id="confirm_info_0" class="service_select confirm_info" style="display: block;">    <div class="publish-project">
+            <div class="wrap">
+                <h2 class="title">项目信息确认</h2>
+
+                <div class="publish-box">
+
+                    <div class="publish-item">
+                        <h2>
+                            天津 河北区 | 高层住宅 | 算量+组价
+                        </h2>
+                        <table class="publish-project_info" width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <th width="90">项目资金:</th>
+                                <td>2222.0元</td>
+                                <th width="90">项目规模:</th>
+                                <td>11平方米</td>
+
+
+                                <th width="90">交付日期:</th>
+                                <td>2017-11-24 14:23:00</td>
+                            </tr>
+                            <tr>
+                                <th>单体数量:</th>
+                                <td>4个</td>
+
+                                <th>软件供应商:</th>
+                                <td>广联达</td>
+
+                                <th>软件名称:</th>
+                                <td>善妒</td>
+                            </tr>
+                            <tr>
+                                <th>项目用途:</th>
+                                <td>招投标</td>
+                                <th>项目特征:</th>
+                                <td colspan="3">地下室<em>｜</em>6
+                                    平米<em>｜</em>有人防<em>｜</em>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>CAD图纸:</th>
+                                <td>有CAD图纸</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <div id="btn_div" style="margin-bottom: 10px;">
-                            <span>详细描述：</span>
+
+                    <div class="publish-item">
+                        <table class="publish-project_info" width="100%" cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <th width="90" class="vat">详细描述:</th>
+                                <td>
+                                    <p>一、计量计价范围<br>*楼*万平（地上*层地下*层），地下车库*万平（地下*层）<br>二、计量计价专业<br>*******************************（需详细说明工作专业内容，算客根据此说明工作）<br>三、计量计价内容<br>"1、施工图上全部工程量计算、清单（或定额子目，请选择）列项及清单组价（该范围平台默认为最大程度范围的工作量）<br>2、图纸上没有的工程上必须要具备的内容，可以按常规工程估算计量组价，并在编制说明中注明<br>3、分楼号分专业分系统进行列项，地上地下要分开列项，图纸上做法为引用的，清单特征中要注明引用的图集及具体做法<br>4、计量计价中要包括措施费、管理费利润等全部造价内容（雇主如无需要算客计算请删除）"<br>四、计量计价依据<br>"1、***清单，***定额，***信息价及市场询价<br>2、以下内容如包含请雇主写明：（甲供材料价格按雇主提供价格、甲分包分项按雇主提供价格计算总包管理费、定额主要材料的含量，以及主要材料的信息价与实际有明显不符的，需按照市场行情进行调整，并在编制说明中注明、土方按机械挖计算，按定额规定放坡，回填按人工：机械为3:7计算）"<br>五、雇主提供的资料<br>"1、*********（如：全套CAD版本图纸或其他等资料）<br>2、平台建议雇主还提供如下资料：总分包工作界面划分清单、各专业清单（或定额）列表、钢筋施工方案、结算编制原则及要求"<br>六、软件要求<br>********<br>七、结果文件<br>"1、****（软件名称）预算、钢筋和图形算量软件结果文件，以及导出的excell文件（含甲供材料表）<br>2、统计汇总后工程量表<br>3、编制说明，图纸疑问<br>4、手工计算底稿及其他文件"<br>八、质量要求<br>"1、计算结果为**用，要求计算底稿清晰明了，不漏项（尤其是零星项目等内容），计算准确，工程量偏差*%以内<br>2、图纸及计量范围等不清晰的地方一定要提出图纸疑问，按图纸疑问答复进行计量，无答复的可按常规理解计量，必须在编制说明中强调注明<br>3、图形软件构件中要套项（或者在汇总清单工程量EXCELL表中进行数据关联），便于后期核对查找数据来源"<br>九、时间要求<br>*日*时完成<br>十、进度要求<br>先算**（部位或者几号楼），*天内完成首层布置及软件计算设置，并提交软件文档；<br>十一、算客要求<br>必须有保证金，有较强的专业基础，做过结算编制，熟悉****（地区、版本）定额规则<br></p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <form id="confirm_info_form" class="new_project" action="/projects" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="WCW0kHkTHvpxPjmv0muYwdQSWNF6iViUBYUMDUa8ULx8vlQhsAzZyieOmBifPmwvFeVpULA4IZLMNDZiJdO8rA==">
+
+                        <div class="publish-item">
+                            <table class="publish-project_info" width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+
+                                <tr>
+                                    <th width="90">项目标题:</th>
+                                    <td colspan="2">
+                                        <input datatype="*" class="ui-input" style="width:400px" placeholder="请输入项目标题" value="天津 河北区 | 高层住宅 | 算量+组价" type="text" name="project[topic]" id="project_topic">
+                                        <div class="Validform_checktip"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th width="90">手机号码:</th>
+                                    <td colspan="2">
+                                        <input id="mobile_id" datatype="m" class="ui-input" placeholder="请输入您的手机号码" type="tel" name="project[mb_phone]">
+                                        <div class="Validform_checktip"></div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th width="90">手机验证码:</th>
+                                    <td style="width: 200px;">
+                                        <input type="text" class="ui-input" name="validate_code" id="validate_code_id" placeholder="请输入验证码" value="">
+                                        <div class="Validform_checktip"></div>
+                                    </td>
+                                    <td style="padding-left: 10px; color: #333333;">
+                                        <a href="javascript:void(0);" onclick="send_validate_code(this)">获取短信验证码</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td colspan="2">
+                                        <p style="display: none; text-align: left;" id="wait_tip_id">
+                                            请您耐心等待…… <br>
+                                            您将会接到12590开头的电话为您播报验证码。
+                                        </p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>QQ号码:</th>
+                                    <td colspan="2">
+                                        <input class="ui-input" placeholder="请输入您的QQ号码" type="" name="project[qq]" id="project_qq">
+                                        &nbsp;&nbsp;<i></i>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>隐私设置:</th>
+                                    <td colspan="2">
+                                        <label class="font-black">
+                                            <input name="project[private_set]" type="hidden" value="0"><input type="checkbox" value="1" name="project[private_set]" id="project_private_set">
+                                            禁止电话联系我
+                                        </label>&nbsp;&nbsp;
+                                        <i class="font-gray">选择后算客看不到您的手机号码</i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td colspan="2">
+                                        <label class="font-black">
+                                            <input name="project[want_pd]" type="hidden" value="0"><input type="checkbox" value="1" name="project[want_pd]" id="project_want_pd">
+                                            由平台指派优秀的算客
+                                        </label>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
                         </div>
-                        <textarea class="input_box" readonly></textarea>
-                    </div>
-                    <div class="input_info">
-                        <div class="pro_price">项目费用：</div>
-                        <ul>
-                            <li>
-                                <span>费用测算：</span><input readonly>
-                            </li>
-                            <li>
-                                <span>联系人：</span><input readonly>
-                            </li>
-                            <li>
-                                <span>联系电话：</span><input readonly>
-                            </li>
-                            <li class="lastch">
-                                <span>联系邮箱</span><input readonly>
-                            </li>
-                        </ul>
-                    </div>
+                        <input type="button" class="next-btn" id="confirm_info_btn" onclick="submit_form('confirm_info_form')" autocomplete="off" value="确认发布">
+                    </form>          <a class="pre-btn" href="" onclick="">返回上一步<i></i></a>
                 </div>
             </div>
-            <div class="updateBtn">
-                <div>确认发布</div>
-            </div>
+        </div>
+            <form id="new_reg_validate_code_id" action="/validate_codes/create_reg" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="HPHMHbmrH/I06g4va/3z4mJSufyPhUVVxU40CG6m1ME4aiyscLTYwmJar5gmqAcMo6WIfUU0PFMM/w5nDck40Q==">
+                <input type="hidden" name="validate_code[receiver]" id="reg_validate_code_receiver_id" value="">
+                <input type="hidden" name="validate_code[send_type]" id="reg_validate_code_type_id" value="">
+            </form></div>
+    </div>
+    <div class="find-project">
+        <div class="page-zj p0 mb20">
+            <a target=""><img src="../image/lang.jpg" alt="3157058699      " width="100%" height="100"></a>
+
         </div>
     </div>
-    <div class="slider_add"></div>
-    <div class="foot_add"></div>
+</div>
+<div class="slider_add"></div>
+<div class="foot_add"></div>
 <script>
     window.onload=function(){
-            controladd();
-            appendcity();
+        controladd();
+        appendcity();
         prewdate();
-        }
+    }
 </script>
 </body>
 </html>

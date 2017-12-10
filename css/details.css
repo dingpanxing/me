@@ -26,11 +26,11 @@
 
 }
 .zoom-box{
-    width: 452px;
+    width: 305px;
     position: relative;
 }
 .small-box{
-    width: 400px;
+    width: 290px;
     position: relative;
 }
 .small-box img{
@@ -75,8 +75,8 @@
 }
 .big-box{
     position: absolute;
-    top: 0;
-    left: 70%;
+    top: -2px;
+    left: 100%;
     margin-left: 2px;
     border: 1px solid #cccccc;
     width: 400px;
@@ -101,7 +101,6 @@
 .pro_details_ul li span,.staff_infor>li>span{
     height: 30px;
     display: inline-block;
-    border: 1px solid #DDDDDD;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -133,6 +132,13 @@
 }
 .staff_infor{
     text-align: center;
+    margin-top: 5px;
+}
+#ing{
+   vertical-align: middle;
+}
+#ing img{
+    margin-top: 7px;
 }
 .tab{
     margin-left: 8px;
@@ -164,7 +170,7 @@
     display: inline-block;
     width: 150px;
     height: 40px;
-    background-color: #DDDDDD;
+    background-color: #ff7300;
     text-align: center;
     color: #ffffff;
     border-radius: 10px;
@@ -320,4 +326,112 @@
     padding-bottom: 10px;
     background: url(../image/ui-icon.png) -30px -192px;
     background-color: #ffffff;
+}
+.btn_price{
+    padding: 5px 10px;
+    background-color: #ff7300;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+.titl_c>span.lefe_btn{
+    margin-left: 450px;
+}
+.project-info-state {
+    margin: -67px 0 100px -13px;
+    position: relative;
+}
+i {
+    font-style: normal;
+}
+.project-info-state span.ok {
+    background: #f1a380;
+}
+.project-info-state span:nth-of-type(1) {
+    left: 78px;
+}
+.project-info-state span {
+    background: #d2d2d2 none repeat scroll 0 0;
+    width: 74px;
+    position: absolute;
+    top: 10px;
+    height: 2px;
+}
+.project-info-state span.doing {
+    background: linear-gradient(left, #f1a380 50%, #d2d2d2 50%);
+    background: -moz-linear-gradient(left, #f1a380 50%, #d2d2d2 50%);
+    background: -o-linear-gradient(left, #f1a380 50%, #d2d2d2 50%);
+    background: -moz-linear-gradient(left, #f1a380 50%, #d2d2d2 50%);
+    background: -webkit-linear-gradient(left, #f1a380 50%, #d2d2d2 50%);
+}
+.project-info-state span:nth-of-type(2) {
+    left: 208px;
+}
+.project-info-state .process-triangle:nth-of-type(2) {
+    background: url(../image/checki.png) no-repeat -158px -7px;
+    left: 240px;
+}
+.project-info-state .process-triangle {
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: 14px;
+}
+
+.project-info-state div.ok i {
+    border: 0;
+    background: #f1a380;
+    color: #ffffff;
+}
+.project-info-state div i {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #d2d2d2;
+    padding-top: 2px;
+    display: inline-block;
+}
+.project-info-state div dt {
+    margin-top: 8px;
+}
+.project-info-state div dd {
+    margin-top: 4px;
+}
+dd{
+    margin: 0;
+    padding: 0;
+}
+.project-info-state > b:nth-of-type(2) {
+    left: 227px;
+}
+.project-info-state > b {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 12px;
+    top: -10px;
+    font-weight: normal;
+    color: #E60012;
+}
+.project-info-state span:nth-of-type(3) {
+    left: 338px;
+}
+.project-info-state span:nth-of-type(4) {
+    left: 468px;
+}
+.project-info-state span:nth-of-type(5) {
+    left: 598px;
+}
+.project-info-state div {
+    text-align: center;
+    font-size: 12px;
+    float: left;
+    display: inline-block;
+    color: #666;
+    margin-right: 30px;
+    width: 100px;
+}
+.project-info-state  b {
+    font-size: 12px;
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>help page</title>
@@ -12,124 +11,282 @@
     <script src="../corejs/controladd.js"></script>
     <script src="test.js"></script>
     <script src="help.js"></script>
-    <style>
-        #item {
-            width: 850px;
-            height: 50px;
-            margin: 0 auto;
-            top: 243px;
-            left: 400px;
-            position: absolute;
-        }
-        /* a {
-            color: #FFFFFF;
-        }
-         */
-        
-        ul {
-            list-style-type: none;
-        }
-        
-        body {
-            background-color: #111;
-            color: #69c;
-            font-family: Arial, "MS Trebuchet", sans-serif;
-            font-weight: bold;
-            font-size: 1em;
-        }
-    </style>
 </head>
-
 <body>
-    <div class="title_page"></div>
-    <div id="item" style="width:333;height:50px;">
-        <ul>
-            <li>website</li>
-            <li>jQuery</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-            <li>PHP</li>
-            <li>3D</li>
-            <li>Ajax</li>
-            <li>CSS</li>
-            <li>Design</li>
-            <li>Flash</li>
-            <li>Experimental</li>
-            <li>Development</li>
-            <li>web</li>
-            <li>Tutorial</li>
-            <li>ASP</li>
-        </ul>
-    </div>
-    <div class="details_contact">
-        <div class="h－header">
-            <img src="../image/bg_help.png">
-        </div>
+   <div class="title_page"></div>
+   <div class="details_contact">
+       <div class="h－header">
+           <img src="../image/bg_help.png">
+       </div>
         <div class="help_page">
             <div class="help_Btn left" style="margin-right: 50px">
                 <ul>
-                    <li class="actiongnow" style="margin-top: 220px" value="0">操作流程</li>
-                    <li value="1">发布帮助</li>
-                    <li value="2">投标帮助</li>
+                    <li class="actiongnow" style="margin-top: 220px" value="hq1">操作流程</li>
+                    <li value="hq2">发布帮助</li>
+                    <li value="hq3">投标帮助</li>
                 </ul>
             </div>
-            <div class="details left" style="margin-top: 50px">
-                <textarea readonly class="text_de"></textarea>
+            <div class="details left" style="margin-top: 10px">
+                <div class="m-right">
+                    <div id="hq1" class="help-qa" >
+                        <p class="q"><a name="q33"></a>发项目前准备</p>
+                        <p class="a">
+                            明确项目工作内容，准备齐全图纸及资料文件。
+                        </p>
+                        <p class="q"><a name="q34"></a>发布项目方式</p>
+                        <p class="a">
+                            1.打电话发布项目<span style="color:#999999;">（方便快捷）</span><br>
+                            2.自行填写项目信息发布<br>
+                            3.通过QQ与管理员沟通发布<br>
+                        </p>
+                        <p class="q"><a name="q35"></a>项目费用</p>
+                        <p class="a">
+                            链接价格测算或价格说明<span style="color:#E53333;">（待完善）</span>
+                        </p>
+                        <p class="q"><a name="q36"></a>项目审核</p>
+                        <p class="a">
+                            发布后的项目需要平台审核通过后才可招标<span style="color:#999999;">（确保：工期、价钱、合理；工作内容、资料完整）</span><br>
+                        </p><p class="c">
+                        审核时间如下：
+                    </p>
+                        <p class="c">
+                            工作日：2小时之内
+                        </p>
+
+                        <p class="c">
+                            非工作日：4小时之内<span style="color:#999999;">（有其他情况可能会延时）</span><br>
+                            如紧急项目请联系平台项目顾问<br>
+                        </p>
+                        <p class="q"><a name="q37"></a>怎么选标</p>
+                        <p class="a">
+                            根据项目发布类型区分：<br>
+                            1.自己选择算客合作<span style="color:#999999;">（竞标项目）</span><br>
+                            2.平台推荐算客合作<span style="color:#999999;">（派单项目）</span><br>
+                            选标前请充分与算客沟通：工作内容、进度、注意事项。选标同时将项目费用托管到平台。<br>
+                        </p>
+                        <p class="q"><a name="q38"></a>项目管理</p>
+                        <p class="a">
+                            在项目详情的进度页签中，算客将不断上传工作进度说明及截图，请及时检查、沟通，如有问题尽快告知算客，以免后期成果偏差过大，延误工期和影响质量。
+                        </p>
+                        <p class="q"><a name="q39"></a>验收、付款</p>
+                        <p class="a">
+                            算客提交成果后尽快验收，有问题向算客提出修改，如无异议，请及时付款。
+                        </p>
+                        <p class="q"><a name="q40"></a>项目需要变更时间或价钱</p>
+                        <p class="a">
+                            如果需要变更时间、价钱，请在项目详情里操作变更操作。<span style="color:#999999;">（如仅线下通知算客有变更，同时也要通知平台，以免有损双方利益</span><span style="color:#999999;">）</span>
+                        </p>
+                        <p class="q"><a name="q41"></a>自动付款</p>
+                        <p class="a">
+                            算客提交成果，3天后可以申请付款，如雇主未操作，系统将在5天后自动付款给算客。
+                        </p>
+                        <p class="q"><a name="q42"></a>成果不合格怎么办</p>
+                        <p class="a">
+                            雇主认为结果文件无法达到要求，可以要求算客调整。最终仍然无法达到要求，可以联系平台，由管理员进行协调。
+                        </p>
+                        <p class="q"><a name="q43"></a>质保时限</p>
+                        <p class="a">
+                            算客对项目提供30天质保，从付款日算起。
+                        </p>
+                        <p class="q"><a name="q44"></a>维权</p>
+                        <p class="a">
+                            雇主利益受损时可以维权，将由平台进行裁决，维护双方利益。<br>
+                            1.成果文件不达标，并且算客拒绝修改<br>
+                            2.算客服务态度恶劣<br>
+                        </p>
+                        <p class="q"><a name="q45"></a>终止项目</p>
+                        <p class="a">
+                            如项目突然有重大变动，需要终止，请联系客服。
+                        </p>
+                        <p class="q"><a name="q46"></a>积分奖励</p>
+                        <p class="a">
+                            1.最近12个月内，成交项目总费用大于1万元，奖励相同金额的积分<br>
+                            <span style="color:#999999;">（未达到1万元不奖励）</span><br>
+                            2.最近12个月内，成交项目总费用大于5万元，超过5万元部分奖励双倍积分<br>
+                        </p><p>
+                        <span style="color:#999999;">（未达到5万元，仅奖励1倍积分）</span>
+                    </p>
+                        <p>
+                            <span style="color:#000000;">3.积分可以在托管项目费用时抵钱使用，100分=1元</span>
+                        </p>
+                        <p></p>
+
+                    </div>
+                    <div id="hq2" class="help-qa hidden">
+                        <p class="q"><a name="q47"></a>成为算客</p>
+                        <p class="a">
+                        </p><p class="a">
+                        成为算客后，可以参与平台的项目。
+                    </p>
+                        <p class="a">
+                            <span style="line-height:1.5;">1.验证手机</span>
+                        </p>
+                        <p class="a">
+                            <span style="line-height:1.5;">2.实名认证（实名认证时需要认证费2元、认证成功后以微信红包形式返还1元）</span>
+                        </p>
+                        <p class="a">
+                            <span style="line-height:1.5;">3.算客资料填写（将在投标时展示给雇主）</span>
+                        </p>
+                        <p class="a">
+                            <span style="line-height:1.5;">4.技能认证（上传执业证书或通过平台的考试认证）&nbsp;</span>
+                        </p>
+                        <p class="a">
+                            &nbsp;5.完善资料（让雇主更了解您）
+                        </p>
+                        <p></p>
+                        <p class="q"><a name="q48"></a>投标前需确认</p>
+                        <p class="a">
+                        </p><p class="a">
+                        1.明确项目工作内容、范围
+                    </p>
+                        <p class="a">
+                            2.详细了解图纸
+                        </p>
+                        <p class="a">
+                            3.确定有足够的时间完成项目
+                        </p>
+                        <p class="a">
+                            <span style="color:#999999;">（</span><span style="color:#999999;">投标即代表能完成项目，中标后如出现：没有时间、没有软件、没了解图纸、等因素，造成项目无法继续，平台将惩罚算客1个月内不准投标，并扣除30信誉分</span><span style="color:#999999;">）</span>
+                        </p>
+                        <p></p>
+                        <p class="q"><a name="q49"></a>取消投标</p>
+                        <p class="a">
+                            投标24小时之后雇主仍未选标，可以取消投标。
+                        </p>
+                        <p class="q"><a name="q50"></a>提升中标率</p>
+                        <p class="a">
+                        </p><p class="a">
+                        1.竞标项目，且雇主公开联系方式，请尽快联系雇主说明个人能力。
+                    </p>
+                        <p class="a">
+                            2.公开、派单、金牌项目，请联系平台说明个人能力。
+                        </p>
+                        <p></p>
+                        <p class="q"><a name="q51"></a>工作规范</p>
+                        <p class="a">
+                        </p><p class="a">
+                        <span><span style="color:#000000;">算客中标后即可开始工作，并遵守平台规范。</span></span>
+                    </p>
+                        <p class="a">
+                            <span><span style="color:#000000;">1.按时提交工作进度<span style="color:#999999;">（工期5天以内，没天提交一次；工期大于5天，每2天提交一次）</span></span></span>
+                        </p>
+                        <p class="a">
+                            <span><span style="color:#000000;"><span style="color:#000000;">2.按时提交成果<span style="color:#999999;">（需在规定时间内完成工作，并将全部文件上传）</span></span></span></span>
+                        </p>
+                        <p class="a">
+                            <span><span style="color:#000000;"><span style="color:#000000;"><span style="color:#000000;">3.遇到问题主动与雇主沟通</span></span></span></span>
+                        </p>
+                        <p></p>
+                        <p class="q"><a name="q52"></a>质保时限</p>
+                        <p class="a">
+                            <span style="color:#333333;font-family:微软雅黑;font-size:14px;line-height:32px;background-color:#FFFFFF;">算客在收到服务费后30天内，应对项目提供维护，修改问题。</span>
+                        </p>
+                        <p class="q"><a name="q53"></a>费用结算</p>
+                        <p class="a">
+                            1.雇主验收成果合格后会付款<span style="color:#999999;">（提交成果后请主动联系雇主）</span><br>
+                            2.雇主未主动付款，也未反馈问题，可以在提交成果的3天后，点击“申请付款”，雇主仍未操作，那么5天后系统将自动付款。<br>
+                        </p>
+                        <p class="q"><a name="q54"></a>提现</p>
+                        <p class="a">
+                        </p><p class="a">
+                        1.工作日提现，一般次日到账
+                    </p>
+                        <p class="a">
+                            2.非工作日提现，一般等到第二个工作日到账
+                        </p>
+                        <p></p>
+                        <p class="q"><a name="q55"></a>保证金</p>
+                        <p class="a">
+                            无保证金算客仅可以同时参与1个1000元以下的项目。<br>
+                            托管保证金可以同时参与3个项目，参与项目价格不得大于10倍已托管的保证金。<span style="color:#999999;">（保证金最少托管1000元，最多5000元。）</span><br>
+                        </p>
+                        <p class="q"><a name="q56"></a>加密锁</p>
+                        <p class="a">
+                            租赁：仅平台接到项目的算客，有权租赁广联达正版加密锁，数量有限。<br>
+                            费用：租金300元/月（会员算客租金200元），押金100元。申请成功后顺丰快递免费送达。<br>
+                        </p>
+                        <p class="q"><a name="q57"></a>信誉分扣除规则</p>
+                        <p class="a">
+                            1、中标后，因算客责任中止项目，扣除算客30信誉分，酌情扣除保证金。<br>
+                            2、算客未按平台工作要求提交进度，每次扣5分。<br>
+                            3、算客未按平台规定时间提交成果文件，每天扣10分。<br>
+                            4、第一次出现刷单情况，扣除30信誉分，第二次直接封号。<br>
+                            5、项目结束后算客骚扰雇主，被举报1次，扣10信誉分。<br>
+                            6、算客在平台承接项目后直接转包或直接把账号交由他人使用，一旦被发现，平台有权更换中标人，首次扣除30信誉分，第二次直接封号。<br>
+                            7、算客要求雇主先支付费用再提交成果，一经核实，第一次扣30信誉分，第二次直接封号。<br>
+                            8、算客无故要求雇主增加服务费才开展工作，一经核实，第一次扣30信誉分，第二次直接封号。<br>
+                            9、算客引导雇主线下交易的（线下支付费用），一经核实，第一次扣30信誉分，第二次直接封号。<br>
+                            10、算客提交虚假个人信息，一经核实，第一次扣30信誉分，第二次直接封号。<br>
+                        </p>
+
+                    </div>
+                    <div id="hq3" class="help-qa hidden">
+                        <p class="q"><a name="q28"></a>竞标项目</p>
+                        <p class="a">
+                            1.雇主自行选择算客<br>
+                            2.项目结果无复核<br>
+                            3.雇主自行管理项目<br>
+                            <span style="color:#999999;">（适合一名算客完成，对工期、质量要求不高，项目费用一般2000元以下）</span><br>
+                        </p>
+                        <p class="q"><a name="q29"></a>公开报名项目</p>
+                        <p class="a">
+                            1.平台指派优秀算客<br>
+                            2.项目结果经过复核<br>
+                            3.雇主自行管理项目<br>
+                            <span style="color:#999999;">（适合一名算客完成，对工期、质量要求较高，项目费用一般2000元以上）</span><br>
+                        </p>
+                        <p class="q"><a name="q30"></a>派单项目与金牌项目</p>
+                        <p class="a">
+                            1.平台指派优秀算客<br>
+                            2.项目结果有复核<br>
+                            3.雇主自行管理项目<br>
+                        </p><p>
+                        <span style="color:#999999;">（适合一名算客完成，对工期、质量要求较高，项目费用一般2000元以上）</span>
+                    </p>
+                        <p>
+                            <span style="color:#999999;">（仅限金牌会员承接）</span>
+                        </p>
+                        <p></p>
+                        <p class="q"><a name="q31"></a>委托项目</p>
+                        <p class="a">
+                            1.平台指派多名算客合作完成项目<br>
+                            2.项目结果经过复核<br>
+                            3.项目经理管理项目<br>
+                            4.平台总体把控<br>
+                            <span style="color:#999999;">（适合多名算客完成，工期、质量要求非常高，项目费用一般5000元以上）</span><br>
+                        </p>
+                        <p class="q"><a name="q32"></a>平台收费</p>
+                        <p class="a">
+                            雇主方：<br>
+                            对于雇主方在平台发布项目，目前免收服务费，可以免费发布。<br>
+                            <br>
+                            算客方：<br>
+                            平台对普通算客收取项目金额的 15%&nbsp;<br>
+                            对金牌会员算客收取项目金额的10%<br>
+                            仅算量项目收取5%<br>
+                            <span style="color:#999999;">例如算客中标价值 2000 元的项目，则算客最终所得：</span><br>
+                            <span style="color:#999999;">普通算客：2000 元（项目款） - 300 元（服务费）= 1700 元</span><br>
+                            <span style="color:#999999;">会员算客：2000 元（项目款） - 200 元（服务费）= 1800 元</span><br>
+                        </p>
+                    </div>
+                </div>
             </div>
+            <div class="clear"></div>
         </div>
+       <div class="find-project">
+           <div class="page-zj p0 mb20">
+               <a target=""><img src="../image/lang.jpg" alt="3157058699      " width="100%" height="100"></a>
+
+           </div>
+       </div>
     </div>
-    <div class="slider_add"></div>
+   <div class="slider_add"></div>
     <div class="foot_add"></div>
-    <script type="text/javascript" src="../index/js124/jquery-1.3.2.min.js"></script>
-    <script src="../index/js124/3DEngine.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../index/js124/Ring.js" type="text/javascript" charset="utf-8"></script>
-    <script>
-        window.onload = function() {
-            controladd();
-            text();
-        }
-        $(document).ready(function() {
-
-            var camera = new Camera3D();
-            camera.init(0, 0, 0, 300);
-
-            var container = $("#item");
-
-            var item = new Object3D(container);
-
-            item.addChild(new Ring(200, $("#item ul li").length));
-
-            var scene = new Scene3D();
-            scene.addToScene(item);
-
-
-            var mouseX, mouseY = 0;
-            var offsetX = $("#item").offset().left;
-            var offsetY = $("#item").offset().top;
-            var speed = 6000;
-
-            $().mousemove(function(e) {
-                mouseX = e.clientX - offsetX - (container.width() / 2);
-                mouseY = e.clientY - offsetY - (container.height() / 2);
-            });
-
-            axisRotation.x = 1.5;
-
-            var animateIt = function() {
-                if (mouseX != undefined) {
-                    axisRotation.y += (mouseX) / speed;
-                }
-
-                scene.renderCamera(camera);
-
-            };
-
-
-            setInterval(animateIt, 20);
-
-
-        });
-    </script>
+<script>
+    window.onload=function(){
+        controladd();
+        text();
+    }
+</script>
 </body>
-
 </html>
