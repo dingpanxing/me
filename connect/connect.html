@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>help page</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <link rel="stylesheet" href="../css/connect.css">
+    <script src="../corejs/jquery-3.2.1.js"></script>
+    <script src="../header/header.js"></script>
+    <script src="../footer/footer.js"></script>
+    <script src="../slidebar/slider.js"></script>
+    <script src="../corejs/controladd.js"></script>
+    <script src="test.js"></script>
+    <script src="help.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=38eW4y1xoZv9dt3IbYGo4A27dULrsxSs"></script>
+</head>
+
+<body>
+    <div class="title_page"></div>
+    <div class="conta_details" id="conta_details1">
+        <div class="conta_left">
+            <p><span>【联系地址】：</span><span>陕西省西安市高新区唐
+                延南路39号冠诚国际</span></p>
+            <p><span>【咨询电话】：</span><span>029-85795828</span></p>
+            <p><span>【传真】：</span><span>029-85795828</span></p>
+            <p><span>【邮编】：</span><span>761500</span></p>
+            <p><span>【网址】：</span><span>http://www.sxzfxx.com/              </span></p>
+            <p><span>【QQ】：</span><span>123456789</span></p>
+            <p><span>【微信】：</span><span>avd234325235235</span></p>
+        </div>
+        <div class="conta_right">
+            <div id="allmap"></div>
+        </div>
+    </div>
+    <div class="slider_add"></div>
+    <div class="foot_add"></div>
+    <script>
+        window.onload = function() {
+                controladd();
+                text();
+            }
+            // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(108.895792, 34.220255);
+        map.centerAndZoom(point, 16);
+        map.enableScrollWheelZoom(true);
+        var marker = new BMap.Marker(point); // 创建标注
+        map.addOverlay(marker);
+        // 添加带有定位的导航控件
+        var navigationControl = new BMap.NavigationControl({
+            // 靠左上角位置
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            // LARGE类型
+            type: BMAP_NAVIGATION_CONTROL_LARGE,
+            // 启用显示定位
+            enableGeolocation: true
+        });
+        map.addControl(navigationControl);
+        // 添加定位控件
+        var geolocationControl = new BMap.GeolocationControl();
+        geolocationControl.addEventListener("locationSuccess", function(e) {
+            // 定位成功事件
+            var address = '';
+            address += e.addressComponent.province;
+            address += e.addressComponent.city;
+            address += e.addressComponent.district;
+            address += e.addressComponent.street;
+            address += e.addressComponent.streetNumber;
+            alert("当前定位地址为：" + address);
+        });
+        geolocationControl.addEventListener("locationError", function(e) {
+            // 定位失败事件
+            alert(e.message);
+        });
+        map.addControl(geolocationControl);
+        map.centerAndZoom(point, 15);
+        var opts = {
+            width: 200, // 信息窗口宽度
+            height: 100, // 信息窗口高度
+            title: "陕西中凡信息科技有限公司", // 信息窗口标题
+            enableMessage: true, //设置允许信息窗发送短息
+            message: "亲耐滴，晚上一起吃个饭吧？戳下面的链接看下地址喔~"
+        }
+        var infoWindow = new BMap.InfoWindow("地址：陕西省西安市高新区唐 延南路39号冠诚国际", opts); // 创建信息窗口对象 
+        marker.addEventListener("click", function() {
+            map.openInfoWindow(infoWindow, point); //开启信息窗口
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>help page</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <script src="../corejs/jquery-3.2.1.js"></script>
+    <script src="../header/header.js"></script>
+    <script src="../footer/footer.js"></script>
+    <script src="../slidebar/slider.js"></script>
+    <script src="../corejs/controladd.js"></script>
+    <script src="test.js"></script>
+    <script src="help.js"></script>
+    <style>
+        #item {
+            width: 850px;
+            height: 50px;
+            margin: 0 auto;
+            top: 243px;
+            left: 400px;
+            position: absolute;
+        }
+        /* a {
+            color: #FFFFFF;
+        }
+         */
+        
+        ul {
+            list-style-type: none;
+        }
+        
+        body {
+            background-color: #111;
+            color: #69c;
+            font-family: Arial, "MS Trebuchet", sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title_page"></div>
+    <div id="item" style="width:333;height:50px;">
+        <ul>
+            <li>website</li>
+            <li>jQuery</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>PHP</li>
+            <li>3D</li>
+            <li>Ajax</li>
+            <li>CSS</li>
+            <li>Design</li>
+            <li>Flash</li>
+            <li>Experimental</li>
+            <li>Development</li>
+            <li>web</li>
+            <li>Tutorial</li>
+            <li>ASP</li>
+        </ul>
+    </div>
+    <div class="details_contact">
+        <div class="h－header">
+            <img src="../image/bg_help.png">
+        </div>
+        <div class="help_page">
+            <div class="help_Btn left" style="margin-right: 50px">
+                <ul>
+                    <li class="actiongnow" style="margin-top: 220px" value="0">操作流程</li>
+                    <li value="1">发布帮助</li>
+                    <li value="2">投标帮助</li>
+                </ul>
+            </div>
+            <div class="details left" style="margin-top: 50px">
+                <textarea readonly class="text_de"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="slider_add"></div>
+    <div class="foot_add"></div>
+    <script type="text/javascript" src="../index/js124/jquery-1.3.2.min.js"></script>
+    <script src="../index/js124/3DEngine.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../index/js124/Ring.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        window.onload = function() {
+            controladd();
+            text();
+        }
+        $(document).ready(function() {
+
+            var camera = new Camera3D();
+            camera.init(0, 0, 0, 300);
+
+            var container = $("#item");
+
+            var item = new Object3D(container);
+
+            item.addChild(new Ring(200, $("#item ul li").length));
+
+            var scene = new Scene3D();
+            scene.addToScene(item);
+
+
+            var mouseX, mouseY = 0;
+            var offsetX = $("#item").offset().left;
+            var offsetY = $("#item").offset().top;
+            var speed = 6000;
+
+            $().mousemove(function(e) {
+                mouseX = e.clientX - offsetX - (container.width() / 2);
+                mouseY = e.clientY - offsetY - (container.height() / 2);
+            });
+
+            axisRotation.x = 1.5;
+
+            var animateIt = function() {
+                if (mouseX != undefined) {
+                    axisRotation.y += (mouseX) / speed;
+                }
+
+                scene.renderCamera(camera);
+
+            };
+
+
+            setInterval(animateIt, 20);
+
+
+        });
+    </script>
+</body>
+
+</html>

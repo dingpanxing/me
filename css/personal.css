@@ -1,0 +1,473 @@
+.conta_person_left {
+    float: left;
+    min-width: 260px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.conta_person_right {
+    float: left;
+    border: 1px solid #ccc;
+}
+
+.clear {
+    clear: both
+}
+
+.conta_ptop {
+    padding: 10px;
+}
+
+.conta_ptop div img {
+    width: 80px;
+    height: 80px;
+}
+
+.conta_ptop>div {
+    display: flex;
+    justify-content: left;
+}
+
+.conta_ptop>div>div:nth-of-type(1) {
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.conta_ptop>div>div:nth-of-type(2) {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.icon-jiangpaitong {
+    color: #fe4e00;
+    font-size: 18px;
+}
+
+.conta_ptop>p {
+    margin-top: 10px;
+}
+
+.conta_ptop>p:nth-of-type(1) {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 35px;
+    background: #fe4e00;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+}
+
+.conta_ptop>p:nth-of-type(2) em {
+    font-style: normal;
+    color: red;
+}
+
+.conta_ptop>p:nth-of-type(3) em {
+    font-style: normal;
+    color: red;
+}
+
+.conta_ptop>p:nth-of-type(4) em {
+    font-style: normal;
+    color: red;
+}
+
+.conta_ptop>p:nth-of-type(4) i {
+    font-style: normal;
+    margin-left: 100px;
+}
+
+.conta_pcent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conta_pcent p em {
+    font-weight: bold;
+    font-style: normal
+}
+
+.conta_pcent p {
+    flex: 1;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.conta_pcent p:nth-of-type(1) {
+    border-left: 0;
+    border-right: 0;
+}
+
+.conta_pcent p:nth-of-type(3) {
+    border-left: 0;
+    border-right: 0;
+}
+
+.conta_pbot {
+    padding-left: 10px;
+}
+
+.conta_pbot a {
+    color: #000;
+}
+
+.conta_wap {
+    width: 1100px;
+    margin: 0 auto
+}
+
+.conta_pbot h3 {
+    font-size: 17px;
+}
+
+.conta_pbot p {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.conta_pbot .icon-jibenxinxi-copy {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #fe4e00
+}
+
+.conta_pbot .icon-xiangmuguanli {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #fe4e00
+}
+
+.conta_pbot .icon-icon068 {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #fe4e00
+}
+
+.conta_pbot .icon-wodejianli {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #fe4e00
+}
+
+.conta_pbot .icon-wodeshoucang {
+    font-size: 25px;
+    margin-right: 15px;
+    color: #fe4e00
+}
+
+.conta_person_right {
+    margin-left: 20px;
+    padding: 20px;
+    width: calc(100% - 299px);
+    background: #fff;
+}
+
+.conta_person_right h3 {
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 3px;
+}
+
+.conta_person_right h3 span {
+    font-size: 25px;
+    color: rgb(101, 52, 218);
+}
+
+.email_l {
+    line-height: 25px;
+}
+
+.conta_peleft {
+    float: left;
+}
+
+.conta_peright {
+    float: left;
+}
+
+.conta_peright p {
+    margin-top: 10px;
+}
+
+.conta_peright p:nth-of-type(1) span:nth-of-type(1) {
+    margin-right: 3px;
+}
+
+.conta_peright p:nth-of-type(1) span:nth-of-type(2) {
+    margin-left: 3px;
+}
+
+.conta_peright p:nth-of-type(1) span b {
+    color: red;
+    font-size: 19px;
+    margin-right: 3px;
+}
+
+.conta_peleft p:nth-of-type(1) {
+    float: left;
+}
+
+.conta_peleft p:nth-of-type(2) span {}
+
+.conta_peleft .icon-geren {
+    font-size: 50px;
+    color: #fe4e00;
+}
+
+.conta_peleft p:nth-of-type(2) {
+    float: left;
+}
+
+.conta_peleft p:nth-of-type(2) span {
+    margin-top: 10px;
+}
+
+.conta_peleft p:nth-of-type(2) span {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.conta_peleft p:nth-of-type(2) span em {
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+}
+
+.conta_peright {
+    margin-left: 120px;
+}
+
+.conta_peright p:nth-of-type(2) span {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.conta_peright p:nth-of-type(3) span {
+    color: red;
+}
+
+.conta_peright p:nth-of-type(4) span:nth-of-type(1) {
+    margin-right: 3px;
+}
+
+.conta_peright p:nth-of-type(4) span:nth-of-type(2) {
+    margin-left: 3px;
+}
+
+.conta_person_r {
+    padding-left: 10px;
+}
+
+.approve {
+    padding-left: 10px;
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(1) .icon-youxiangrenzheng {
+    font-size: 40px;
+    color: #fe4e00;
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(1) em {
+    font-style: normal;
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(1) em:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+.approve p:nth-of-type(1) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.spac_b {
+    display: flex;
+    justify-content: space-between;
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(2) {
+    /* margin-right: 50px; */
+    margin-bottom: 5px;
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(2) i {
+    font-style: normal;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.approve p:nth-of-type(1) span:nth-of-type(2) em {
+    font-style: normal;
+    display: inline-block;
+    background: rgb(64, 189, 26);
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px;
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(1) .icon-shimingrenzheng {
+    font-size: 40px;
+    color: #fe4e00;
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(1) em {
+    font-style: normal;
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(1) em:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+.approve p:nth-of-type(2) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(2) {
+    /* margin-left: 470px; */
+    margin-bottom: 5px;
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(2) i {
+    font-style: normal;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.approve p {
+    padding-top: 10px;
+}
+
+.approve p:nth-of-type(2) span:nth-of-type(2) em {
+    font-style: normal;
+    display: inline-block;
+    background: rgb(61, 147, 218);
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px;
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(1) .icon-qiyerenzheng {
+    font-size: 40px;
+    color: #fe4e00;
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(1) em {
+    font-style: normal;
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(1) em:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+.approve p:nth-of-type(3) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(2) {
+    /* margin-left: 127px; */
+    margin-bottom: 5px;
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(2) i {
+    font-style: normal;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.approve p:nth-of-type(3) span:nth-of-type(2) em {
+    font-style: normal;
+    display: inline-block;
+    background: rgb(61, 147, 218);
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px;
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(1) .icon-shoujirenzheng {
+    font-size: 40px;
+    color: #fe4e00;
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(1) em {
+    font-style: normal;
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(1) em:nth-of-type(2) {
+    margin-left: 5px;
+}
+
+.approve p:nth-of-type(4) {
+    padding-bottom: 5px;
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(1) em {
+    display: inline-block
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(2) {
+    /* margin-left: 500px; */
+    margin-bottom: 5px;
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(2) i {
+    font-style: normal;
+    display: inline-block;
+    border: 1px solid #ccc;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.approve p:nth-of-type(4) span:nth-of-type(2) em {
+    font-style: normal;
+    display: inline-block;
+    background: rgb(64, 189, 26);
+    border-radius: 3px;
+    color: #fff;
+    padding: 2px;
+}

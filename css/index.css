@@ -1,0 +1,143 @@
+.conta_wap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.conta_indexleft {
+    float: left;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+h3,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.conta_indexleft h3 {
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+    background: #fe4e00;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.conta_indexleft-ul {
+    padding: 5px;
+}
+
+.conta_indexleft-ul li {
+    font-size: 14px;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.conta_indexleft-ul li p:nth-of-type(2) {
+    color: #fe4e00;
+}
+
+.conta_indexleft-ul li p:nth-of-type(3) {
+    color: #fe4e00;
+}
+
+.conta_indexleft-ul li:nth-of-type(5) {
+    border-bottom: none;
+}
+
+.conta_indexright {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.conta_indexright {
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.conta_indexright .conta_indexrightp {
+    padding-left: 480px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.conta_indexright-ul {
+    border-radius: 5px;
+}
+
+.conta_indexright-w {
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.conta_indexright-ul li {
+    text-align: center;
+    width: 282px;
+    border: 1px solid #ccc;
+    float: left;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.conta_indexright-ul li p:nth-of-type(2) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.conta_indexright-ul li p:nth-of-type(2) span {
+    color: #fe4e00;
+}
+
+.conta_indexbot {
+    border: 1px solid #f5f5f5;
+}
+
+.conta_details {
+    background: #f5f5f5;
+    margin-top: -67px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.conta_indexright-ul li p:nth-of-type(3) {
+    font-size: 13px;
+    color: rgb(150, 146, 146);
+}
+
+.conta_indexright-ul li p:nth-of-type(4) {
+    font-size: 13px;
+    color: rgb(150, 146, 146);
+    padding-bottom: 10px;
+}
+
+.conta_indexright-ul li p:nth-of-type(5) span:nth-of-type(1) {
+    color: red;
+    margin-right: 3px;
+}
+
+.conta_indexright-ul li p:nth-of-type(5) span:nth-of-type(2) a {
+    display: inline-block;
+    border: 1px solid #0098fe;
+    box-sizing: border-box;
+    color: #0098fe;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    width: 90px;
+    border-radius: 3px;
+}

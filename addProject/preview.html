@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/core.css">
+    <script src="../corejs/jquery-3.2.1.js"></script>
+    <script src="../corejs/city.min.js"></script>
+    <script src="../header/header.js"></script>
+    <script src="../footer/footer.js"></script>
+    <script src="../slidebar/slider.js"></script>
+    <script src="../corejs/controladd.js"></script>
+    <script src="data.js"></script>
+    <script src="preview.js"></script>
+</head>
+<body>
+    <div class="title_page"></div>
+    <div class="details_contact pre_content">
+        <div class="details_contact_box" id="prew1">
+            <div class="pro_type">
+                <form action="" method="get">
+                    <div>项目分类：</div>
+                    <label><input name="project" type="radio" value="1" />工程造价</label>
+                    <label><input name="project" type="radio" value="2" />招投标 </label>
+                    <label><input name="project" type="radio" value="3" />施工组织设计</label>
+                    <label><input name="project" type="radio" value="4" />工程资料</label>
+                    <label><input name="project" type="radio" value="5" />图纸设计</label>
+                    <label><input name="project" type="radio" value="6" />咨询指导</label>
+                    <label><input name="project" type="radio" value="7" />其他</label>
+                </form>
+            </div>
+            <div class="pro_need">
+                <form action="" method="get">
+                    <div>需求分类：</div>
+                    <label><input name="needtype" type="checkbox" value="" />工程量计算</label>
+                    <label><input name="needtype" type="checkbox" value="" />编制概预算 </label>
+                    <label><input name="needtype" type="checkbox" value="" />编制清单</label>
+                    <label><input name="needtype" type="checkbox" value="" />投标报价</label>
+                    <label><input name="needtype" type="checkbox" value="" />其他</label>
+                </form>
+            </div>
+            <div class="profress">
+                <form action="" method="get">
+                    <div>专业分类：</div>
+                    <label><input name="project" type="checkbox" value="" />土建</label>
+                    <label><input name="project" type="checkbox" value="" />钢结构 </label>
+                    <label><input name="project" type="checkbox" value="" />装饰装修</label>
+                    <label><input name="project" type="checkbox" value="" />水电暖安装</label>
+                    <label><input name="project" type="checkbox" value="" />机电安装</label>
+                    <label><input name="project" type="checkbox" value="" />设备安装</label>
+                    <label><input name="project" type="checkbox" value="" />工业管道</label>
+                    <label><input name="project" type="checkbox" value="" />消防工程</label>
+                    <label><input name="project" type="checkbox" value="" />道路桥梁</label>
+                    <label><input name="project" type="checkbox" value="" />市政绿化</label>
+                    <label><input name="project" type="checkbox" value="" />电力土建</label>
+                    <label><input name="project" type="checkbox" value="" />电力安装</label>
+                    <label><input name="project" type="checkbox" value="" />水利水电</label>
+                    <label><input name="project" type="checkbox" value="" />通信广电</label>
+                    <label><input name="project" type="checkbox" value="" />矿业工程</label>
+                    <label><input name="project" type="checkbox" value="" />其他</label>
+                </form>
+            </div>
+            <div class="pro_introdce">
+                <div class="info_details">
+                    <div>
+                        <span class="pro_title">项目概况：</span>
+                        <ul class="form_table">
+                            <li class="form_addr">
+                                <span class="form_title">项目地址：</span>
+                                <select id="prov">
+                                </select>
+                                <select id="city">
+                                </select>
+                            </li>
+                            <li>
+                                <span class="form_title">交付日期：</span>
+                                <select>
+                                    <option>北京</option>
+                                </select>
+                            </li>
+                            <li>
+                                <span class="form_title">建筑规模：</span>
+                                <input>
+                            </li>
+                            <li class="lastch">
+                                <span class="form_title">图纸资料：</span>
+                                <input>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div id="btn_div" style="margin-bottom: 10px;">
+                            <span>详细描述：</span>
+                            <button value="0">计量模板</button>
+                            <button value="1" style="margin-left: 9px;margin-right: 9px">计价模板</button>
+                            <button value="2">清单模板</button>
+                        </div>
+                        <div class="model_box">
+                            <div id="close_model">
+                                <span>计量计价需求参考模板：</span>
+                                <div id="clos">
+                                    <b></b>
+                                </div>
+                            </div>
+                            <div id="bottom_text_box">
+                                <span style="text-align: left">请您根据项目实际情况修改后使用，避免直接使用模版</span>
+                                <textarea class="model_read" readonly></textarea>
+                            </div>
+                            <div class="ser_btn">使用该模版内容</div>
+                        </div>
+                        <textarea class="input_box"></textarea>
+                    </div>
+                    <div class="input_info">
+                        <div class="pro_price">项目费用：</div>
+                        <ul>
+                            <li>
+                                <span>费用测算：</span><input>
+                            </li>
+                            <li>
+                                <span>联系人：</span><input>
+                            </li>
+                            <li>
+                                <span>联系电话：</span><input>
+                            </li>
+                            <li class="lastch">
+                                <span>联系邮箱</span><input>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="updateBtn">
+               <div>确认</div>
+            </div>
+        </div>
+        <div class="details_contact_box hidden" id="prew2">
+            <div class="pro_type">
+                <form action="" method="get">
+                    <div>项目分类：</div>
+                    <label><input name="project" type="radio" value="1" />工程造价</label>
+                    <label><input name="project" type="radio" value="2" disabled/>招投标 </label>
+                    <label><input name="project" type="radio" value="3" disabled/>施工组织设计</label>
+                    <label><input name="project" type="radio" value="4" disabled/>工程资料</label>
+                    <label><input name="project" type="radio" value="5" disabled/>图纸设计</label>
+                    <label><input name="project" type="radio" value="6" disabled/>咨询指导</label>
+                    <label><input name="project" type="radio" value="7" disabled/>其他</label>
+                </form>
+            </div>
+            <div class="pro_need">
+                <form action="" method="get">
+                    <div>需求分类：</div>
+                    <label><input name="needtype" type="checkbox" value=""  disabled/>工程量计算</label>
+                    <label><input name="needtype" type="checkbox" value="" disabled/>编制概预算 </label>
+                    <label><input name="needtype" type="checkbox" value="" disabled/>编制清单</label>
+                    <label><input name="needtype" type="checkbox" value="" disabled/>投标报价</label>
+                    <label><input name="needtype" type="checkbox" value="" disabled/>其他</label>
+                </form>
+            </div>
+            <div class="profress">
+                <form action="" method="get">
+                    <div>专业分类：</div>
+                    <label><input name="project" type="checkbox" value="" disabled/>土建</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>钢结构 </label>
+                    <label><input name="project" type="checkbox" value="" disabled/>装饰装修</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>水电暖安装</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>机电安装</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>设备安装</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>工业管道</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>消防工程</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>道路桥梁</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>市政绿化</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>电力土建</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>电力安装</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>水利水电</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>通信广电</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>矿业工程</label>
+                    <label><input name="project" type="checkbox" value="" disabled/>其他</label>
+                </form>
+            </div>
+            <div class="pro_introdce">
+                <div class="info_details">
+                    <div>
+                        <span class="pro_title">项目概况：</span>
+                        <ul class="form_table">
+                            <li class="form_addr">
+                                <span class="form_title">项目地址：</span>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span class="form_title">交付日期：</span>
+                                <span></span>
+                            </li>
+                            <li>
+                                <span class="form_title">建筑规模：</span>
+                                <span></span>
+                            </li>
+                            <li class="lastch">
+                                <span class="form_title">图纸资料：</span>
+                                <span></span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div id="btn_div" style="margin-bottom: 10px;">
+                            <span>详细描述：</span>
+                        </div>
+                        <textarea class="input_box" readonly></textarea>
+                    </div>
+                    <div class="input_info">
+                        <div class="pro_price">项目费用：</div>
+                        <ul>
+                            <li>
+                                <span>费用测算：</span><input readonly>
+                            </li>
+                            <li>
+                                <span>联系人：</span><input readonly>
+                            </li>
+                            <li>
+                                <span>联系电话：</span><input readonly>
+                            </li>
+                            <li class="lastch">
+                                <span>联系邮箱</span><input readonly>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="updateBtn">
+                <div>确认发布</div>
+            </div>
+        </div>
+    </div>
+    <div class="slider_add"></div>
+    <div class="foot_add"></div>
+<script>
+    window.onload=function(){
+            controladd();
+            appendcity();
+        prewdate();
+        }
+</script>
+</body>
+</html>
